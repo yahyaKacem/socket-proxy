@@ -1,0 +1,16 @@
+{
+  "name": "socket-proxy",
+  "version": "0.1.0",
+  "author": "Justin Mandzik <justin.mandzik@gmail.com>",
+  "description": "proxies socket requests to their ajax destination",
+  "dependencies": {
+    "colors": "*",
+    "express": ">=3",
+    "socket.io": "*",
+    "underscore": "*",
+    "superagent": "*"
+  },
+  "engines": {
+    "node": ">=0.8"
+  }
+}
