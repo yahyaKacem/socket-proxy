@@ -10,6 +10,9 @@
     "underscore": "*",
     "superagent": "*"
   },
+  "dev-dependencies":{
+    "coffee-script": "*"
+  },
   "engines": {
     "node": ">=0.8"
   }
