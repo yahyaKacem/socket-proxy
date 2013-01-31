@@ -4,7 +4,7 @@ net      = require 'net'
 fs       = require 'fs'
 http     = require 'https'
 express  = require 'express'
-socketio = require('socket.io')
+socketio = require 'socket.io'
 agent    = require 'superagent';
 
 # Defaults
@@ -23,11 +23,11 @@ credentials = {
 }
 
 # Start the https server
-https = http.createServer(credentials, server)
-https.listen(httpsPort)
+https = http.createServer credentials, server
+https.listen httpsPort 
 console.log 'https server serving socket.io listening on ' + httpsPort
 # Bind socket.io to https server
-io    = socketio.listen(https)
+io    = socketio.listen https
 io.set 'log level', 1
 
 
